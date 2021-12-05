@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>ADless games</title>
+  <script type="text/javascript" src="https://sdk.userbase.com/2/userbase.js"></script>
+</head>
+
+<body>
+      <!-- Auth View -->
+  <div id="auth-view" align=center>
+    <h1>Log in</h1>
+      <input id="username" style='text-align: center' type="text" required placeholder="Username"><br><br>
+      <input id="password" style='text-align: center' type="password" required placeholder="Password"><br><br>
+      <button onclick="signup()" style='background:white; border-radius: 7px; outline: none; border: 1px solid  black; cursor: pointer; text-align:center' title='create an account'> + </button> &nbsp; <button onclick='login()' style='background:white; border-radius: 7px; outline: none; border: 1px solid  black; cursor: pointer'  >Log in</button>
+  </div>
+
+<script>
+  signup = ()=>{document.location.href = "signup.html"}
+
+  login = ()=>{
+  userbase.init({ appId: 'f26fb1ef-2323-4c02-9c0c-72cbd7bc6519', allowServerSideEncryption: true})
+    localStorage.username = document.getElementById("username").value
+    localStorage.password = document.getElementById("password").value
+    username = localStorage.username; password = localStorage.password
+    userbase.signIn({ username, password, rememberMe: 'local' })
+        .then(()=>{
+            userbase.openDatabase({ databaseName: 'info', changeHandler})
+        })
+  }
+
+  function changeHandler(info){
+    if(info[0].length === 0){userbase.insertItem({ databaseName: 'info', item: { ls: localStorage}})
+    }else{
+      localStorage = info[0].item.ls
+    }
+    document.location.href = "//adless.games"
+    }
+  </script>
+</body>
+</html>
