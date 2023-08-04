@@ -6,4 +6,4 @@ While there's no shortage of platforms for deploying static sites, they all requ
 
 In terms of design, Adless Games leverages the power of Git's diff mechanism, ensuring precise updates by comparing global and local keys within the repository. By integrating CloudFlare Workers, an edge computing service, content is fetched directly from GitHub and stored on a CDN for optimal performance.
 
-![Loading...](design.png)
+[ ![Loading...](design.png) ](https://whimsical.com/adless-games-UjoqfvRkCT2gNFABvmtuVv)
