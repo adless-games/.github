@@ -1,6 +1,6 @@
 While there's no shortage of platforms for deploying static sites, they all require page building prior to deployment. Adless Games is a platform that enables deployment without the need for building, resulting in swift, effortless deployment.
 
-[![Install Adless Games](button.svg)](https://adless.games/app)
+[![Install Adless Games]( ![install](https://github.com/adless-games/.github/assets/79541546/f6ccfefa-0b28-43b1-ae0b-dd0fd7e56cd4)) ](https://adless.games/app)
 
 ## Design
 
