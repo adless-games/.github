@@ -1,4 +1,4 @@
-While there's no shortage of platforms for deploying static sites, they all require page building prior to deployment. Adless Games is a platform that enables deployment without the need for building, resulting in swift, effortless deployment.
+Adless Games is a free platform to deploy your game to a wesbite fast without having to wait for builds!
 
 [ ![Install Adless Games](https://github.com/adless-games/.github/assets/79541546/28b1c2e8-06a6-4644-82e3-334cab11dc2d) ](https://adless.games/app)
 
